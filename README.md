@@ -1,6 +1,6 @@
 # Astro Starter Kit: Basics
 
-```sh https://docs.astro.build/en/tutorial/1-setup/3/
+```sh 
 npm create astro@latest -- --template basics
 ```
 
