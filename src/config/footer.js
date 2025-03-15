@@ -23,37 +23,20 @@ export const footerSocials = [
 
 export const footerLists = [
 	{
-		title: 'Landing Pages',
+		title: 'The Lab',
 		items: [
 			{
-				title: 'Landing Page 1',
-				slug: '/landing-pages/landing-1',
+				title: 'Blog',
+				slug: '/the-lab/blog',
 			},
 			{
-				title: 'Landing Page 2',
-				slug: '/landing-pages/landing-2',
+				title: 'Travel Gallery',
+				slug: '/the-lab/gallery',
 			},
       // {
 			// 	title: 'Landing Page 3',
 			// 	slug: '/landing-pages/landing-3',
 			// },
-		],
-	},
-	{
-		title: 'Discover',
-		items: [
-			{
-				title: 'About',
-				slug: '/discover/about',
-			},
-			{
-				title: 'Blog',
-				slug: '/blog',
-			},
-			{
-				title: 'Contact',
-				slug: '/discover/contact',
-			},
 		],
 	},
 	{
@@ -75,6 +58,23 @@ export const footerLists = [
         title: 'Customizing Odyssey',
         slug: '/theme/customizing-odyssey',
       }
+		],
+	},
+	{
+		title: 'Discover',
+		items: [
+			{
+				title: 'About',
+				slug: '/discover/about',
+			},
+			{
+				title: 'Where I\'ve Been',
+				slug: '/discover/travels',
+			},
+			{
+				title: 'Contact',
+				slug: '/discover/contact',
+			},
 		],
 	},
 ];
