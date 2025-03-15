@@ -2,7 +2,7 @@
 title: "Columbus to Cheyenne: The Road Trip That Changed My View on Travel"
 pubDate: 2025-03-13
 description: "A road trip that sparked my love for travel and discovery."
-layout: ../../layouts/Layout.astro
+layout: ../../../layouts/Layout.astro
 ---
 
 # Columbus to Cheyenne: The Road Trip That Changed My View on Travel
