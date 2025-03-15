@@ -40,11 +40,11 @@ export const footerLists = [
 		],
 	},
 	{
-		title: 'Company',
+		title: 'Discover',
 		items: [
 			{
 				title: 'About',
-				slug: '/company/about',
+				slug: '/discover/about',
 			},
 			{
 				title: 'Blog',
@@ -52,7 +52,7 @@ export const footerLists = [
 			},
 			{
 				title: 'Contact',
-				slug: '/company/contact',
+				slug: '/discover/contact',
 			},
 		],
 	},
