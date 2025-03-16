@@ -9,7 +9,7 @@ export const nav = [
 	},
 	{
 		title: 'About',
-		slug: '/disvoer/about',
+		slug: '/discover/about',
 	},
 	{
 		title: 'Contact',
