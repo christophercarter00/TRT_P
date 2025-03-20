@@ -1,0 +1,50 @@
+---
+import '../../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Astro" />
+    <title>Blog | The Roam Theory</title>
+  </head>
+  <body>
+    <header class="p-4 shadow-md bg-white fixed top-0 w-full z-10">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold">The Roam Theory</h1>
+        <nav>
+          <a href="/" class="ml-4 text-gray-600 hover:text-black">Home</a>
+          <a href="/about" class="ml-4 text-gray-600 hover:text-black">About</a>
+          <a href="/theory-lab" class="ml-4 text-gray-600 hover:text-black">Theory Lab</a>
+          <a href="/gallery" class="ml-4 text-gray-600 hover:text-black">Gallery</a>
+          <a href="/blog" class="ml-4 text-gray-600 hover:text-black">Blog</a>
+          <a href="/my-travels" class="ml-4 text-gray-600 hover:text-black">My Travels</a>
+          <a href="/contact" class="ml-4 text-gray-600 hover:text-black">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mt-16 p-8">
+      <section>
+        <h2 class="text-3xl font-bold mb-4">Blog Posts</h2>
+        <ul class="list-disc pl-5 space-y-2">
+          <li>
+            <a href="/blog/post-1/Columbus-to-Cheyenne" class="text-blue-600 hover:underline">Columbus to Cheyenne</a>
+          </li>
+          <li>
+            <a href="/blog/post-2" class="text-blue-600 hover:underline">Post 2 Title</a>
+          </li>
+          <li>
+            <a href="/blog/post-3" class="text-blue-600 hover:underline">Post 3 Title</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="p-4 text-center text-gray-500">
+      &copy; 2025 The Roam Theory. All rights reserved.
+    </footer>
+  </body>
+</html>
