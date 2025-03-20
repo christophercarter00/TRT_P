@@ -20,31 +20,11 @@ const seo = {
 };
 ---
 
-<Layout {seo}>
-	<TextAndImageHero reversed>
-		<div slot="text-container">
-			<h1>The Roam Theory </h1>
-			<p>Travel isn’t just about places—it’s about the journey that takes you there and the perspective it gives you. This is my exploration of how movement, in any form, leads to something deeper.</p>
-		</div>
-			
-		</div>
-		<picture slot="image-container">
-			<img
-				src="/assets/images/landing-1/landing-hero-1.jpg"
-				alt="Astro Odyssee"
-				id="home-hero-image"
-			/>
-		</picture>
-	</TextAndImageHero>
-
-	<CustomerQuoteSection
-		quoteText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, vero nobis? Voluptas assumenda, voluptatibus commodi qui ducimus delectus praesentium maiores, impedit iure labore ratione, ea facilis numquam doloremque aperiam aspernatur."
-		customerName="Happy Customer"
-	/>
-
-	<ThreeColumnTextSection>
-		<div slot="column-1-body">
-			<h2>Why?</h2>
+<Layout>
+	<HomeHeroSection />
+	<Container>
+		<section class="feature-card__section">
+			<h2>Updates</h2>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
 				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
