@@ -1,72 +1,160 @@
 ---
-import '../styles/global.css';
+import { Icon } from 'astro-icon/components';
+import {
+	Button,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+	StickyTextImageSection,
+	CtaCardSection,
+	Container,
+	FeatureCard,
+} from '@components/odyssey-theme';
+import Layout from '../layouts/Page.astro';
+import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+import TextAndImageHero from '../components/sections/heros/TextAndImageHero.astro';
+
+const seo = {
+	title: 'Landing Page #1 | Astro Odyssey Theme',
+	description: 'Landing Page #1 | Astro Odyssey Theme',
+};
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content="Astro" />
-    <title>The Roam Theory</title>
-  </head>
-  <body>
-    <header class="p-4 shadow-md bg-white fixed top-0 w-full z-10">
-      <div class="container mx-auto flex justify-between items-center">
-        <h1 class="text-xl font-bold">The Roam Theory</h1>
-        <nav>
-          <a href="/" class="ml-4 text-gray-600 hover:text-black">Home</a>
-          <a href="/about" class="ml-4 text-gray-600 hover:text-black">About</a>
-          <a href="/theory-lab" class="ml-4 text-gray-600 hover:text-black">Theory Lab</a>
-          <a href="/gallery" class="ml-4 text-gray-600 hover:text-black">Gallery</a>
-          <a href="/blog" class="ml-4 text-gray-600 hover:text-black">Blog</a>
-          <a href="/my-travels" class="ml-4 text-gray-600 hover:text-black">My Travels</a>
-          <a href="/contact" class="ml-4 text-gray-600 hover:text-black">Contact</a>
-        </nav>
-      </div>
-    </header>
+<Layout>
+	<HomeHeroSection />
+	<Container>
+		<section class="feature-card__section">
+			<h2>Updates</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
+				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
+				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
+				mollitia cumque. Velit.
+			</p>
+		</div>
+		<Button slot="column-1-cta">Learn More</Button>
+		<div slot="column-2-body">
+			<h2>How?</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
+				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
+				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
+				mollitia cumque. Velit.
+			</p>
+		</div>
+		<Button slot="column-2-cta" outlined>Learn More</Button>
+		<div slot="column-3-body">
+			<h2>What?</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
+				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
+				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
+				mollitia cumque. Velit.
+			</p>
+		</div>
+		<Button slot="column-3-cta">Learn More</Button>
+	</ThreeColumnTextSection>
 
-    <main class="mt-16">
-      <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('/hero-image.jpg');">
-        <div class="text-center text-white bg-black bg-opacity-50 p-8 rounded">
-          <h2 class="text-4xl font-bold mb-4">Exploring Movement, Meaning, and the Deeper Side of Travel</h2>
-          <p class="text-lg">Join the journey and discover new perspectives.</p>
-        </div>
-      </section>
+	<StickyTextImageSection>
+		<div slot="text-container">
+			<h2>Features</h2>
+			<h3>SEO</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
+				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
+				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
+				mollitia cumque. Velit.
+			</p>
+			<h3>Responsive</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
+				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
+				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
+				mollitia cumque. Velit.
+			</p>
+			<h3>Themeable</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
+				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
+				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
+				mollitia cumque. Velit.
+			</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/landing-1/landing-sticky.jpg"
+				alt="Astro Odyssey"
+				loading="lazy"
+			/>
+		</picture>
+	</StickyTextImageSection>
 
-      <section id="about" class="p-8 bg-gray-100">
-        <h2 class="text-2xl font-bold mb-4">About The Roam Theory</h2>
-        <p>The Roam Theory is about meaningful travel, exploration, and connecting with the world on a deeper level.</p>
-      </section>
+<Layout>
 
-      <section id="theory-lab" class="p-8">
-        <h2 class="text-2xl font-bold mb-4">Theory Lab</h2>
-        <p>Delve into ideas and discussions about the philosophy of travel.</p>
-      </section>
+	<Container>
+		<section class="feature-card__section">
+			<h2>Discover More</h2>
+			<p>
+				Use one of our prebuilt company pages for your about page, contact page,
+				legal pages, blog posts, etc.
+			</p>
+			<div class="feature-card__grid">
+				<FeatureCard href="/discover/about" title="About Page" imgSrc="/assets/images/home/screenshots/about">
+				</FeatureCard>
+				<FeatureCard href="/discover/contact" title="Contact Page" imgSrc="/assets/images/home/screenshots/contact">
+				</FeatureCard>
+				<FeatureCard href="/blog/" title="Blog Page" imgSrc="/assets/images/home/screenshots/blog">
+				</FeatureCard>
+				<FeatureCard
+					href="/blog/posts/Columbus-to-Cheyenne"
+					title="Columbus to Cheyenne"
+          imgSrc="/assets/images/home/screenshots/blog-post"
+				>
+				</FeatureCard>
+				<FeatureCard
+					href="/company/legal"
+					imgSrc="/assets/images/home/screenshots/legal"
+					title="Legal Page"
+				>
+				</FeatureCard>
+			</div>
+		</section>
+	</Container>
 
-      <section id="gallery" class="p-8 bg-gray-100">
-        <h2 class="text-2xl font-bold mb-4">Gallery</h2>
-        <p>Discover visual stories from various travels and explorations.</p>
-      </section>
+	<Container>
+		<section class="feature-card__section">
+			<h2>Theme Pages</h2>
+			<p>Learn more about how to set up and use the Odyssey Theme.</p>
+			<div class="feature-card__grid">
+				<FeatureCard
+					href="/theme/get-started"
+					imgSrc="/assets/images/home/screenshots/get-started"
+					title="Get Started"
+				>
+				</FeatureCard>
+				<FeatureCard
+					href="/theme/style-guide"
+					imgSrc="/assets/images/home/screenshots/style-guide"
+					title="Style Guide"
+				>
+				</FeatureCard>
+			</div>
+		</section>
+	</Container>
+</Layout>
 
-      <section id="blog" class="p-8">
-        <h2 class="text-2xl font-bold mb-4">Latest Insights</h2>
-        <p>Coming soon: Stories, experiences, and reflections from around the globe.</p>
-      </section>
-
-      <section id="my-travels" class="p-8 bg-gray-100">
-        <h2 class="text-2xl font-bold mb-4">My Travels</h2>
-        <p>A personal collection of travel adventures and memories.</p>
-      </section>
-
-      <section id="contact" class="p-8">
-        <h2 class="text-2xl font-bold mb-4">Get in Touch</h2>
-        <p>Email us at <a href="mailto:contact@theroamtheory.com" class="text-blue-500">contact@theroamtheory.com</a></p>
-      </section>
-    </main>
-
-    <footer class="p-4 text-center text-gray-500">
-      &copy; 2025 The Roam Theory. All rights reserved.
-    </footer>
-  </body>
-</html>
+<style>
+	.feature-card__section {
+		margin: var(--section-margin) auto;
+	}
+	.feature-card__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--theme-grid-gap);
+	}
+	@media (max-width: 768px) {
+		.feature-card__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

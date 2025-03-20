@@ -1,0 +1,102 @@
+[33mcommit 2890db915d0651d4ade63fd2884033729c1e7396[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mnew-template-branch[m[33m)[m
+Author: Christopher Carter <ccar6234@gmail.com>
+Date:   Sat Mar 15 07:35:53 2025 -0400
+
+    Fixed: Added original files for reference without git history
+
+[33mcommit 5d8dc992e8ede41f9ac6debd0c36b1aa941b2ff0[m
+Author: Christopher Carter <ccar6234@gmail.com>
+Date:   Sat Mar 15 07:33:42 2025 -0400
+
+    Added original files for reference
+
+[33mcommit 0944714c47a51abf4f4580aaec9109ec7b249183[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Christopher Carter <ccar6234@gmail.com>
+Date:   Sat Mar 15 06:54:06 2025 -0400
+
+    Your commit message
+
+[33mcommit 36c921520ad04c5fd996576f1a9081366b8307d4[m
+Author: Christopher Carter <ccar6234@gmail.com>
+Date:   Sat Mar 15 06:44:31 2025 -0400
+
+    fix: update blog post link to include full title in URL
+
+[33mcommit d9ebebbf92f378857d114d1ad818dec93dfeb418[m
+Author: Christopher Carter <ccar6234@gmail.com>
+Date:   Sat Mar 15 05:11:16 2025 -0400
+
+    fix: update layout path for blog post "Columbus to Cheyenne"
+
+[33mcommit b7f0db5dfa8fec7f19c0d7e71037eece2639a008[m
+Author: Christopher Carter <ccar6234@gmail.com>
+Date:   Sat Mar 15 04:34:03 2025 -0400
+
+    feat: restructure About and Blog pages with new index files
+
+[33mcommit a2fdefb04e11fd6f127ce167cde28fc46b91470b[m[33m ([m[1;31morigin/develop[m[33m)[m
+Author: Christopher Carter <ccar6234@gmail.com>
+Date:   Sat Mar 15 04:28:18 2025 -0400
+
+    feat: redesign About page with new layout and navigation
+
+[33mcommit 63218da8e8c026d3937d56cb06e817b8f122358d[m
+Author: Christopher Carter <ccar6234@gmail.com>
+Date:   Sat Mar 15 04:25:51 2025 -0400
+
+    fix: update navigation links to use absolute paths
+
+[33mcommit 956bc872ca52e4f69df75b290d7aff3b88af4103[m
+Author: Christopher Carter <ccar6234@gmail.com>
+Date:   Sat Mar 15 04:17:42 2025 -0400
+
+    feat: migrate blog post "Columbus to Cheyenne" to new directory structure
+
+[33mcommit ee62da061a29d0ce0ab82d47ee0c6e2dabba33d0[m
+Author: Christopher Carter <ccar6234@gmail.com>
+Date:   Thu Mar 13 15:09:57 2025 -0400
+
+    feat: add blog post "Columbus to Cheyenne" and update blog index
+
+[33mcommit c32c65567310d763157445c26bdabad98ce644cc[m
+Merge: 5a88b70 b1bdcc8
+Author: Christopher Carter <ccar6234@gmail.com>
+Date:   Thu Mar 13 14:22:27 2025 -0400
+
+    Merge branches 'main' and 'main' of https://github.com/christophercarter00/https---github.com-christophercarter00-TRT_Personal
+
+[33mcommit 5a88b70104bf1df2d2e275de36ff0ad364eef040[m
+Author: Christopher Carter <ccar6234@gmail.com>
+Date:   Thu Mar 13 14:19:47 2025 -0400
+
+    fix: add newline at the end of blog.astro file
+
+[33mcommit b1bdcc814a8f01f255575519165006bd6eb64003[m
+Author: Christopher Carter <150073299+christophercarter00@users.noreply.github.com>
+Date:   Thu Mar 13 14:02:05 2025 -0400
+
+    Update README.md
+
+[33mcommit 7a17e95671a46998f86ec6616c6eacf84b355a1a[m
+Author: Christopher Carter <150073299+christophercarter00@users.noreply.github.com>
+Date:   Thu Mar 13 14:01:42 2025 -0400
+
+    Update README.md
+
+[33mcommit 848aee6dfe1c9bd8ae40f61270c0b457b1e06d0f[m
+Author: Christopher Carter <ccar6234@gmail.com>
+Date:   Thu Mar 13 13:37:26 2025 -0400
+
+    fix: correct meta generator tag syntax in index.astro
+
+[33mcommit fc6d4de9b9546b85b36d86d1e2350cc5ac766dd1[m
+Author: Christopher Carter <ccar6234@gmail.com>
+Date:   Thu Mar 13 13:28:23 2025 -0400
+
+    add about page with navigation links and introductory content
+
+[33mcommit dabbcce9ced2b8c1a56196a1fcc72111313b95d3[m
+Author: Christopher Carter <ccar6234@gmail.com>
+Date:   Thu Mar 13 10:01:17 2025 -0400
+
+    initialize Astro project with Tailwind CSS integration and basic structure

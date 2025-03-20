@@ -1,0 +1,135 @@
+---
+import { Icon } from 'astro-icon/components';
+import { Container } from '@components/odyssey-theme';
+import settings from '../../../config/settings.js';
+import { ThemeSwitcher } from '../../theme-switcher/theme-switcher';
+---
+
+<Container>
+  <section class="hero-section__section">
+    <div class="hero-section__text">
+      <h1>The Roam Theory</h1>
+      <p>
+        Travel isn’t just about places—it’s about the journey that takes you there and the perspective it gives you. This is my exploration of how movement, in any form, leads to something deeper.
+      </p>
+      {settings.enableThemeSwitcher && <ThemeSwitcher client:only />}
+        </div>
+        <div class="hero-section__slideshow">
+      <div class="slides">
+        <figure class="slide">
+          <img src="/assets/images/home/hero1.jpg" alt="Spruce Knob, West Virginia" />
+          <figcaption>38°41'53.5"N 79°32'04.9"W</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="/assets/images/home/hero2.jpg" alt="Bellevue, Texas" />
+          <figcaption>33°39'01.6"N 98°02'27.0"W</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="/assets/images/home/hero3.jpg" alt="Santa Cruz, California" />
+          <figcaption>36°56'59.4"N 122°02'49.2"W</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="/assets/images/home/hero4.jpg" alt="Medicine Bow-Routt National Forest, Wyoming" />
+          <figcaption>41°20'43.8"N 106°19'06.6"W</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="/assets/images/home/hero5.jpg" alt="Puerto Morelos, Quintana Roo, Mexico" />
+          <figcaption>20°52'31.8"N 86°51'55.8"W</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="/assets/images/home/hero6.jpg" alt="Ken Caryl, Colorado" />
+          <figcaption>39°33'38.7"N 105°08'46.3"W</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="/assets/images/home/hero7.jpg" alt="Kremmling, Colorado" />
+          <figcaption>40°01'31.7"N 106°23'24.2"W</figcaption>
+        </figure>
+        <figure class="slide">
+          <img src="/assets/images/home/hero8.jpg" alt="Grand Canyon Junction, Arizona" />
+          <figcaption>35°44'34.4"N 112°05'31.6"W</figcaption>
+        </figure>
+      </div>
+      <div class="slideshow-controls">
+        <button class="prev" onclick="plusSlides(-1)" style="background-color: rgba(0, 0, 0, 0.3);">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)" style="background-color: rgba(0, 0, 0, 0.3);">&#10095;</button>
+      </div>
+        </div>
+  </section>
+</Container>
+
+<style>
+  .hero-section__section {
+    margin: var(--section-margin) auto;
+    min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+  .hero-section__text {
+    justify-self: center;
+    max-width: 25rem;
+  }
+  .hero-section__slideshow {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--theme-shape-radius);
+  }
+  .slideshow-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  .slideshow-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .hero-section__section {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  let slideIndex = 0;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function showSlides(n) {
+    const slides = document.querySelectorAll('.slide');
+    if (n >= slides.length) { slideIndex = 0 }
+    if (n < 0) { slideIndex = slides.length - 1 }
+    slides.forEach((slide, index) => {
+      (slide as HTMLElement).style.transform = `translateX(${-slideIndex * 100}%)`;
+    });
+  }
+
+  // Automatically move to the next slide every 5 seconds
+  setInterval(() => {
+    plusSlides(1);
+  }, 5000); // 5000 milliseconds = 5 seconds
+</script>
